@@ -1,0 +1,12 @@
+@import url(components/globals.css);
+
+@import url(components/_header.css);
+@import url(components/_banner.css);
+@import url(components/_form.css);
+@import url(components/_cars.css);
+@import url(components/_promotions.css);
+@import url(components/_agencies.css);
+@import url(components/_customers.css);
+@import url(components/_footer.css);
+
+

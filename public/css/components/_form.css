@@ -1,0 +1,47 @@
+.form {
+
+}
+.form__group {
+    margin-bottom: .8rem;
+}
+.form__input {
+    font-family: 'Infiniti-Light', sans-serif;
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: .4rem;
+    font-size: .8rem;
+    color: #555;
+}
+.form__label {
+    font-size: .7rem;
+    font-weight: 500;
+    position: relative;
+    bottom: 2px;
+    cursor: pointer;
+}
+.form__button {
+    display: block;
+    margin: 1rem auto;
+    background-color: #fff;
+    padding: .5rem 2.5rem;
+    border: 1px solid #000;
+    font-weight: 600;
+    font-size: .7rem;
+    cursor: pointer;
+    transition: all .5s;
+    font-family: 'Infiniti-Regular', sans-serif;
+    /*font-weight: 300;*/
+}
+.form__button:hover {
+    background-color: #313131;
+    color: #fff;
+}
+.form__error {
+    font-family: 'Infiniti-Light', sans-serif;
+    font-weight: 300;
+    color: firebrick;
+    font-size: .8rem;
+}

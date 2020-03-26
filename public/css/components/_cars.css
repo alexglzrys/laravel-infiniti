@@ -1,0 +1,76 @@
+.cars {
+    padding: 3rem 0;
+}
+.cars__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    flex-basis: calc(25% - 1rem);
+    margin: .5rem;
+}
+.card__image {
+    max-width: 100%;
+    display: block;
+}
+.card__features {
+    margin: 1rem 0;
+}
+.card__item {
+    line-height: 1.1rem;
+    padding: .3rem 0;
+    color: #7B7B7B;
+    font-size: .8rem;
+}
+.card__item--strong {
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #111;
+    margin-bottom: .8rem;
+}
+.card__item--strong:last-child {
+    font-size: 1.2rem;
+}
+.card__item--light {
+    font-size: .7rem;
+}
+.card__link {
+    display: inline-block;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    padding: .6rem 0;
+    transition: all .4s;
+}
+.card__link:hover {
+    color: #686868;
+}
+.card__link:after {
+    content: "\27A4";
+    margin-left: .5rem;
+}
+
+@media screen and (min-width: 480px) {
+    .cars__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card {
+        flex-basis: calc(50% - 1rem);
+    }
+}
+@media screen and (min-width: 768px) {
+    .card {
+        flex-basis: calc(33.33% - 1rem);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .card {
+        flex-basis: calc(20% - 1rem);
+    }
+}

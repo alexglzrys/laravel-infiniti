@@ -1,0 +1,61 @@
+.promotions {
+    background-color: #EFEFEF;
+    padding: 3rem 0;
+}
+.promotions__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.promotions__item {
+    margin: 1rem .5rem;
+    text-align: center;
+    font-family: 'Infiniti-Light', sans-serif;
+    font-weight: 300;
+}
+.promotions__item:before {
+    display: block;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-family: 'Font Awesome 5 Free';
+}
+.promotions__item:nth-of-type(1):before {
+    content: '\f1b8';
+}
+.promotions__item:nth-of-type(2):before {
+    content: '\f968';
+}
+.promotions__item:nth-of-type(3):before {
+    content: '\f3d1';
+}
+.promotions__title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: .5rem 0 2rem;
+    text-transform: uppercase;
+}
+.promotions__description {
+    font-size: .9rem;
+    text-align: left;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 480px) {
+    .promotions__container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .promotions__item {
+        width: calc(50% - 1rem);
+        margin: .5rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .promotions__item {
+        width: calc(33.33% - 1rem);
+        margin: .5rem;
+    }
+}

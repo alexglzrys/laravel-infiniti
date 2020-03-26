@@ -1,0 +1,14 @@
+.header {
+    background-color: #e8eae9;
+}
+.header__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #DBDBDB;
+}
+.header__brand {
+    width: 100px;
+}

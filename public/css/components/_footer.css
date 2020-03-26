@@ -1,0 +1,84 @@
+.footer {
+    background-color: #191919;
+    padding: 3rem 0 1rem;
+    border-top: 8px solid rgba(0,0,0, .5);
+}
+.footer__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.footer__section {
+    margin: 0 .5rem 1.5rem;
+}
+.footer__title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+}
+.footer__item {
+}
+.footer__link {
+    font-family: 'Infiniti-Light', sans-serif;
+    font-weight: 300;
+    padding: .5rem 0;
+    display: block;
+    color: #999999;
+    font-size: .9rem;
+    transition: all .5s;
+}
+.footer__link:hover {
+    text-decoration: underline;
+    color: #D3D3D3;
+}
+.social {
+    display: flex;
+}
+.social__item {
+    margin: .5rem 1rem .5rem 0;
+}
+.social__icon:before {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 900;
+    color: #999999;
+    font-size: 2rem;
+    transition: all .5s;
+}
+.social__icon:hover:before {
+    color: #D3D3D3;
+}
+.social__icon[href*="facebook"]:before {
+    content: '\f082';
+}
+.social__icon[href*="twitter"]:before {
+    content: '\f081';
+}
+.social__icon[href*="youtube"]:before {
+    content: '\f431';
+}
+.social__icon[href*="instragram"]:before {
+    content: '\f955';
+}
+
+@media screen and (min-width: 480px) {
+    .footer__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer__section {
+        flex-basis: calc(50% - 1rem);
+        margin: 0 .5rem 2rem;
+    }
+}
+@media screen and (min-width: 720px) {
+    .footer {
+        padding: 3rem 0;
+    }
+    .footer__section {
+        flex-basis: calc(33.33% - 1rem);
+        margin: 0 .5rem;
+    }
+}

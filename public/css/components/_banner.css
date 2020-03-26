@@ -1,0 +1,101 @@
+.banner {
+    background-color: #e8eae9;
+}
+.banner__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.banner__form {
+    padding: .5rem 2rem;
+}
+.banner__slogan {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    line-height: 1.7rem;
+    font-family: 'Infiniti-Bold', sans-serif;
+}
+.banner__model {
+    display: block;
+    font-weight: 300;
+    font-family: 'Infiniti-Light', sans-serif;
+}
+.banner__image {
+    background-image: url('../../img/image_mobile_v2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 170px;
+}
+.banner__message {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Infiniti-Light', sans-serif;
+    font-weight: 300;
+    line-height: 1.5rem;
+    position: relative;
+}
+.banner__message:before {
+    content: '';
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: -1rem;
+    transform: translateX(-50%);
+}
+.banner__message--error {
+    color: firebrick;
+}
+
+@media
+screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px) and (orientation: landscape),
+screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px) and (orientation: landscape),
+screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px) and (orientation: landscape),
+screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px) and (orientation: landscape),
+screen and (                min-resolution: 192dpi) and (min-width: 320px) and (orientation: landscape),
+screen and (                min-resolution: 2dppx)  and (min-width: 320px) and (orientation: landscape) {
+  .banner__image {
+        background-image: url('../../img/image_mobile_v2@2x.png');
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .banner__image {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner__image {
+        background-image: url('../../img/image_desktop_v2.png');
+    }
+    .banner {
+        height: 500px;
+    }
+    .banner__container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .banner__form {
+        width: 38%;
+        padding: .5rem;
+    }
+    .banner__image {
+        width: 60%;
+        align-self: stretch;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .banner__image {
+        background-image: url('../../img/image_desktop_v2@2x.png');
+    }
+}

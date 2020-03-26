@@ -1,0 +1,50 @@
+/*@import url('https://fonts.googleapis.com/css?family=Amaranth:400,400i,700|Raleway:400,500,600|Roboto:300,400,500,700,900&display=swap');*/
+
+@font-face {
+    font-family: "Infiniti-Regular";
+    src: url("../../font/InfinitiBrandL1-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Infiniti-Light";
+    src: url("../../font/InfinitiBrandL1-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Infiniti-Bold";
+    src: url("../../font/InfinitiBrandL1-Bold.ttf");
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+body {
+    font-size: 16px;
+    font-family: 'Infiniti-Regular', sans-serif;
+}
+.section-title {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #444;
+    position: relative;
+}
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #444;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}

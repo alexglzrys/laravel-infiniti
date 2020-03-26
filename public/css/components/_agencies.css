@@ -1,0 +1,56 @@
+.agencies {
+    padding: 3rem 0;
+}
+.agencies__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.agency {
+    width: calc(50% - 1rem);
+    margin: .5rem;
+}
+.agency__link {
+    display: block;
+    height: 100%;
+    color: #444;
+    font-weight: 300;
+    text-align: center;
+    transition: all .3s;
+}
+.agency__link:hover:before {
+    color: #111;
+    transform: scale(1.1);
+}
+.agency__link:before {
+    content: '\f19c';
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: 'Font Awesome 5 Free';
+    display: block;
+    color: #666;
+    margin-bottom: .5rem;
+    transition: all .3s;
+}
+.agency__title {
+    font-family: 'Infiniti-Light', sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+@media screen and (min-width: 480px) {
+    .agency {
+        width: calc(33.33% - 1rem);
+    }
+}
+@media screen and (min-width: 600px) {
+    .agency {
+        width: calc(25% - 1rem);
+    }
+}
+@media screen and (min-width: 768px) {
+    .agency {
+        width: calc(20% - 1rem);
+    }
+}

@@ -1,0 +1,74 @@
+.customers {
+    padding: 3rem 0;
+}
+.customers__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.customer {
+    margin: .5rem 0 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Infiniti-Light', sans-serif;
+    font-weight: 300;
+}
+.customer__img {
+    border-radius: 50%;
+    line-height: 1;
+}
+.customer__information {
+    margin-top: 1rem;
+}
+.customer__item {
+    padding: .2rem 0;
+    font-size: .8rem;
+}
+.customer__item:nth-child(1) {
+    font-weight: 700;
+    font-size: .9rem;
+}
+.customer__item--phone:before,
+.customer__item--email:before {
+    font-weight: 900;
+    margin-right: .5rem;
+    color: #444;
+}
+.customer__item--phone:before {
+    content: '\f232';
+    font-family: 'Font Awesome 5 Brands';
+}
+.customer__item--email:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f0e0';
+}
+.customer__item--email {
+    word-break: break-all;
+}
+.customer__link {
+    color: steelblue;
+}
+.customer__item--info {
+    color: darkred;
+}
+
+@media screen and (min-width: 480px) {
+    .customers__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .customer {
+        width: calc(50% - 1rem);
+    }
+}
+@media screen and (min-width: 768px) {
+    .customer {
+        width: calc(33.33% - 1rem);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .customer {
+        width: calc(25% - 1rem);
+    }
+}
