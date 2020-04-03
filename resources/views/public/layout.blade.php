@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>@yield('title', config('app.name'))</title>
     <meta name="description" content="@yield('description', 'Autos que impulsan tu potencial')">
+    <!-- Meta Tag que le indica al navegador a tratar todo el contenido inseguro declarado en el sitio
+        como contenido seguro (https) -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicons/favicon.ico') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicons/favicon-16x16.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicons/favicon-32x32.png') }}">
